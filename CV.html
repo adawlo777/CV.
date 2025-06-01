@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Adrianna Włosowicz</title>
+  <link rel="stylesheet" href="style.css">
+  <div id="clock" style="font-size: 1.2em; font-weight: bold; margin-top: 10px;"></div>
+</head>
+<body>
+  <div class="container">
+    <header>
+	 <img src="profil.jpg" alt="Zdjęcie Dr Adrianna Włosowicz">
+	 <h1>Adrianna Włosowicz</h1>
+	 <p>Specjalista chorób wewnętrznych</p>
+	</header>
+
+	<section class="info">
+	 <h2>Dane kontaktowe</h2>
+	 <ul>
+	   <li>📧 Email: adrianna.wlosowicz@student.sobieski.krakow.pl</li>
+	   <li>📞 Telefon: +48 123 456 789</li>
+	   <li>🌍 Miasto: Kraków</li>
+	   <li>💼 LinkedIn: linkedin.com/in/adriannawlosowicz</li>
+	 </ul>
+	</section>
+
+	<section>
+	  <h2>Wykształcenie</h2>
+	  <ul>
+	    <li><strong>Uniwersytet Jagielloński Collegium Medicum</strong> - kierunek lekarski, 2026-2032</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h2>Doświadczenie zawodowe</h2>
+	  <ul>
+	    <li><strong>Szpital Uniwersytecki w Krakowie</strong> - praktyki kliniczne w zakresie chorób wewnętrznych, pediatrii, chirurgii i ginekologii</li>
+	    <li><strong>Przychodnia Medicover</strong> - wolontariat i wsparcie zespołu lekarzy internistów (2029)</li>
+	  </ul>
+	</section>
+
+	<section>
+	  <h2>Umiejętności</h2>
+	  <ul>
+		<li>Rozpoznawanie, leczenie i zapobieganie chorobom</li>
+		<li>Interpretacja wyników badań laboratoryjnych</li>
+		<li>Przygotowanie opinii, zaświadczeń i wniosków, dotyczących leczenia chorych</li>
+		<li>Obsługa komputera - programy Exel i Word</li>
+	  </ul>
+	</section>
+
+	<footer>
+	  <p>&copy; 2025 Adrianna Włosowicz</p>
+	</footer>
+	
+	<script>
+	  function updateClock() {
+	    const now = new Date();
+		const hours = now.getHours().toString().padStart(2, '0');
+		const minutes = now.getMinutes().toString().padStart(2, '0');
+		const seconds = now.getSeconds().toString().padStart(2, '0');
+		const time = `${hours}:${minutes}:${seconds}`;
+		document.getElementById('clock').textContent = `Aktualny czas: ${time}`;
+	 }
+
+	 // Aktualizuj co sekundę
+	 setInterval(updateClock, 1000);
+	 updateClock(); // Od razu pokaż czas
+	</script>
+  </div>
+</body>
+</html>  
